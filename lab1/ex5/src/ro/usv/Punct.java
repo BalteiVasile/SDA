@@ -34,8 +34,7 @@ public class Punct {
     @Override
     public String toString()
     {
-        String text="("+x+","+y+")";
-        return text;
+        return "("+x+","+y+")";
     }
 
     public double distanta(double x, double y)

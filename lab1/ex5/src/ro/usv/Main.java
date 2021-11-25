@@ -7,5 +7,7 @@ public class Main {
     public static void main(String[] args)
     {
 	    Poligon p= new Poligon();
+        p.afisare_v();
+        p.Perimetru();
     }
 }
