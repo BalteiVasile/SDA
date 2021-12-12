@@ -1,6 +1,7 @@
 package ro.usv;
 
-public abstract class Nava {
+public abstract class Nava
+{
     private String nume, pavilion;
 
     public Nava()
@@ -14,13 +15,21 @@ public abstract class Nava {
         this.pavilion=pavilion;
     }
 
+    public String getNume()
+    {
+        return this.nume;
+    }
+
+    public String getPavilion()
+    {
+        return this.pavilion;
+    }
+
     @Override
     public String toString()
     {
         return nume+" "+pavilion;
     }
 
-    public void utilizare() //abstract??
-    {
-    }
+    public abstract void utilizare();
 }
