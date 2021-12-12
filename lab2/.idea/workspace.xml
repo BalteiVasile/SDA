@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17aba0b7-87ce-42a5-9ad0-3e1c8f357288" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/ro/usv/Angajat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/ro/usv/CalculSalarii.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/ro/usv/IAngajat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/ro/usv/Inginer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/ro/usv/Persoana.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab2/ro/usv/Sofer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/usv/Angajat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/usv/CalculSalarii.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/usv/IAngajat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/usv/IAngajat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/usv/Inginer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/usv/Persoana.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ro/usv/Sofer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/ex5/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/ro/usv/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/ro/usv/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ro/usv/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ro/usv/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +17,23 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="21PoEyP2S0aNJrEAe3hYvoKsJMi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -97,6 +93,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="ro.usv.Main" />
@@ -124,5 +125,16 @@
       <updated>1637851976812</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
