@@ -23,6 +23,6 @@ public class Persoana
     @Override
     public String toString()
     {
-        return this.nume+','+this.prenume;
+        return this.nume+' '+this.prenume;
     }
 }
