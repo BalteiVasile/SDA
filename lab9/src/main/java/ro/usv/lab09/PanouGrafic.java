@@ -20,7 +20,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class PanouGrafic extends Application {
+public class PanouGrafic extends Application
+{
     private final Stage mainStage = new Stage();
     private String sirIntrodus = "";
     private final TextField nodCrt = new TextField();
@@ -30,11 +31,12 @@ public class PanouGrafic extends Application {
     private final Button btnOpen = new Button("Citire din fisier");
     private final Button btnSave = new Button("Salvare in fisier");
     private final Button btnClear = new Button("Goleste consola");
-    private final Button btnClearTree = new Button("Goleste arborele");
+    private final Button btnClearTree = new Button("Elibereaza arborele");
     ArboreBinarDeCautare<String> arb = new ArboreBinarDeCautare<>();
     TextArea zonaTextArea = new TextArea("Operatii:");
 
-    private HBox operatiiArbore() {
+    private HBox operatiiArbore()
+    {
         HBox panou = new HBox(10, nodCrt, btnInsert, btnFind, btnDelete,
                 btnOpen, btnSave, btnClear, btnClearTree);
 
@@ -66,7 +68,7 @@ public class PanouGrafic extends Application {
         btnClearTree.setOnAction(a -> {
             arb = new ArboreBinarDeCautare<>();
             PauseTransition pause = new PauseTransition(Duration.seconds(1.5));
-            zonaTextArea.setText(arb.isEmpty() ? "Arborele a fost golit." : "Nu s-a putut goli arborele.");
+            zonaTextArea.setText(arb.isEmpty() ? "Arborele a fost eliberat." : "Nu s-a putut elibera arborele.");
             pause.setOnFinished(e -> zonaTextArea.setText("Operatii: "));
             pause.play();
         });
@@ -146,7 +148,7 @@ public class PanouGrafic extends Application {
                                 case "SRD (inordine)" -> zonaTextArea.appendText("\n- " + newvalue + ": " + arb.SRD().stream().map(ArboreBinarDeCautare.Nod::toString).collect(Collectors.joining(" ")));
                                 case "SDR (postordine)" -> zonaTextArea.appendText("\n- " + newvalue + ": " + arb.SDR().stream().map(ArboreBinarDeCautare.Nod::toString).collect(Collectors.joining(" ")));
                                 case "Numar nivele" -> zonaTextArea.appendText("\n- " + newvalue + ": " + arb.h_arbore());
-                                case "Info" -> zonaTextArea.appendText("\nProgram: Arbore binar de cautare. Autor: Doroftei Andrei 3131B");
+                                case "Info" -> zonaTextArea.appendText("\nArbore binar de cautare | Autor: Baltei Vasile, semigrupa: 3131B");
                             }
                         }
                 );
