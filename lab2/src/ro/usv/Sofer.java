@@ -1,19 +1,19 @@
 package ro.usv;
 
-public class Inginer extends Persoana implements IAngajat
+public class Sofer extends Persoana implements IAngajat
 {
     private int nrOreLucrate=0;
-    private double coeficientSalarial_categorie=1.5;
+    private double coeficientSalarial_categorie=1.0,km_parcursi=5000;
 
-    public Inginer(String nume,String prenume)
+    public Sofer(String nume,String prenume)
     {
         super(nume,prenume);
     }
 
     public void setNrOreLucrate(int nrOreLucrate)
     {
-        if(nrOreLucrate>250)
-            System.out.println("Nu poate avea mai mult de 250 de ore!!");
+        if(nrOreLucrate>300)
+            System.out.println("Nu poate avea mai mult de 300 de ore!!");
         else
             this.nrOreLucrate=nrOreLucrate;
     }

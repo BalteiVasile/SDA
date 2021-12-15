@@ -14,6 +14,7 @@ public class Persoana
     {
         return this.nume;
     }
+
     public String getPrenume()
     {
         return this.prenume;
@@ -22,6 +23,6 @@ public class Persoana
     @Override
     public String toString()
     {
-        return this.nume+' '+this.prenume;
+        return this.nume+','+this.prenume;
     }
 }
