@@ -1,6 +1,6 @@
 package ro.usv;
 
-public class Sofer extends Persoana implements IAngajat
+public class Sofer extends Angajat
 {
     private int nrOreLucrate=0,km_parcursi=0;
     private double coeficientSalarial_categorie=1.0;

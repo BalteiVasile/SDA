@@ -1,6 +1,6 @@
 package ro.usv;
 
-public class Persoana
+public abstract class Persoana
 {
     private String nume,prenume;
 
@@ -19,6 +19,8 @@ public class Persoana
     {
         return this.prenume;
     }
+
+    public abstract double salariu();
 
     @Override
     public String toString()
