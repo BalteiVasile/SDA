@@ -15,7 +15,11 @@ import javafx.scene.Scene;
 import org.w3c.dom.Text;
 import org.w3c.dom.events.Event;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 //#region explicatii
 
@@ -25,43 +29,67 @@ import java.io.IOException;
     //hbox h=new hbox (la fel ca la vbox)
 
 //endregion
-public class HelloApplication extends Application implements EventHandler<ActionEvent>
+public class HelloApplication extends Application
 {
-    TextField ca= new TextField();
-    TextField cb= new TextField();
-    Label rezultat=new Label("Rezultatul:");
+    TextField text;
+    ArrayList<produse> lista=new ArrayList<produse>();
 
     @Override
     public void start(Stage stage) throws IOException
     {
-        //cerinte, primul coeficient si al doilea
-        Label mesaj= new Label("Dati coef. ecuatiei ax+b=0");
-        HBox randA=new HBox(10,new Label("a:"),ca);
-        HBox randB=new HBox(10,new Label("b:"),cb);
+        Button citire=new Button("citire");
+        text=new TextField();
 
-        //butonul si rezultatul
-        Button buton= new Button("Calculeaza");
-        buton.setOnAction(this);
-        HBox randRezultat=new HBox(10,buton,rezultat);
-        VBox panou=new VBox(10,mesaj,randA,randB,randRezultat);
-        Scene scene=new Scene(panou,320,240);
-        stage.setScene(scene);
-        stage.setTitle("ex3");
+        citire.setOnAction(new EventHandler<ActionEvent>()
+        {
+            @Override
+            public void handle(ActionEvent actionEvent)
+            {
+                if(citeste())
+                    for (produse obj : lista) {
+                        text.appendText(obj.toString());
+                    }
+
+                //stage.hide();
+            }
+        });
+
+        VBox v=new VBox(20,citire,text);
+        Scene scena=new Scene(v,25,300);
+
+        stage.setScene(scena);
+        stage.setTitle("testplm");
         stage.show();
     }
 
-    @Override
-    public void handle(ActionEvent actionEvent) {
-        try {
-            double a = Double.parseDouble(ca.getText());
-            double b = Double.parseDouble(cb.getText());
-            if(a!=0) {
-                rezultat.setText("x=" + (-b/a));
-            } else {
-                rezultat.setText("Ecuatie incompatibila");
+    public static void main(String[] args)
+    {
+        //citeste();
+        launch();
+    }
+
+    public boolean citeste()
+    {
+        try
+        {
+            File f=new File("in.txt");
+            Scanner s= new Scanner(f);
+
+            while(s.hasNextLine())
+            {
+                String aux=s.nextLine();
+                String[] p=aux.split("'");
+
+                produse prod=new produse(p[0],p[1],Double.parseDouble(p[2]));
+                lista.add(prod);
             }
-        } catch (NumberFormatException e){
-            rezultat.setText("Nunar incorect");
+
+            return true;
+        }
+        catch (FileNotFoundException e)
+        {
+            System.out.println("Eroare, fisier negasit");
+            return false;
         }
     }
 }
